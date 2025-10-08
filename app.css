@@ -470,3 +470,53 @@ dialog#movie-dialog::backdrop {
     background: rgba(23, 23, 23, 0.9);
   }
 }
+
+
+/* År filter styling */
+.year-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.year-filter input {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text-color);
+}
+
+
+/* Rating filter styling */
+.rating-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rating-filter input {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: var(--text-color);
+}
+
+#clear-filters {
+  padding: 0.75rem 1rem;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#clear-filters:hover {
+  background: var(--accent-hover);
+}
+
+

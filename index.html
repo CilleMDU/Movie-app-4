@@ -26,18 +26,40 @@
       <option value="year">Sortér: År (nyeste først)</option>
       <option value="rating">Sortér: Rating (højeste først)</option>
     </select>
+    <div class="year-filter">
+    <label>📅 År:</label>
+    <input type="number" id="year-from" placeholder="Fra år" min="1900" max="2024" />
+    <span>til</span>
+    <input type="number" id="year-to" placeholder="Til år" min="1900" max="2024" />
+  </div>
+  <!-- Rating range filter - TILFØJ EFTER år filter -->
+<div class="rating-filter">
+  <label>⭐ Rating:</label>
+  <input type="number" id="rating-from" placeholder="Fra" min="0" max="10" step="0.1" />
+  <span>til</span>
+  <input type="number" id="rating-to" placeholder="Til" min="0" max="10" step="0.1" />
+</div>
+<button id="clear-filters">🗑️ Ryd alle filtre</button>
   </section>
   <!-- Movie List -->
   <section id="movie-list">
     <!-- Movie items will be displayed here - from JS -->
   </section>
 </main>
-
-    <script src="app.js"></script>
-    <footer>
+  <footer>
       <p>© RACE - Rasmus Cederdorff</p>
-    </footer>
+  </footer>
+ <!-- Movie Detail Modal -->
+  <dialog id="movie-dialog">
+    <form method="dialog">
+      <button id="close-dialog" aria-label="Close">✕</button>
+      <div id="dialog-content">
+         <!-- Movie details will be injected here via JavaScript -->
+      </div>
+    </form>
+  </dialog>
 
     <script src="app.js"></script>
+
   </body>
 </html>
