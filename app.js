@@ -234,3 +234,6 @@ function showMovieModal(movie) {
   `;
     document.querySelector("#movie-dialog").showModal();
 }
+
+
+//hej//
